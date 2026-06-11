@@ -68,7 +68,7 @@ const Weather = () => {
   <div className="app-container">
     <h1 className="title">Weather App</h1>
 
-    {/* ✅ WEATHER CARD - always visible */}
+    {/* WEATHER CARD - always visible */}
     <div
       className="weather-card"
       style={{
@@ -77,7 +77,7 @@ const Weather = () => {
           : "linear-gradient(to bottom, #2c3e50, #4ca1af)",
       }}
     >
-      {/* 🔍 Search bar - INSIDE card */}
+      {/*  Search bar - INSIDE card */}
       <div className="search-bar">
         <input
           type="text"
@@ -91,7 +91,7 @@ const Weather = () => {
         <button onClick={() => searchCity(city.trim())}>🔍</button>
       </div>
 
-      {/* ⏳ LOADING */}
+      {/*  LOADING */}
       {loading && (
         <div className="loading-card">
           <p style={{ fontSize: "40px" }}>⏳</p>
@@ -99,7 +99,7 @@ const Weather = () => {
         </div>
       )}
 
-      {/* ❌ ERROR */}
+      {/*  ERROR */}
       {error && !loading && (
         <div className="error-card">
           <p style={{ fontSize: "40px" }}>😕</p>
@@ -107,7 +107,7 @@ const Weather = () => {
         </div>
       )}
 
-      {/* ✅ WEATHER DATA */}
+      {/*  WEATHER DATA */}
       {!loading && weatherData && (
         <>
           <div className="weather-main">
